@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "DMLT - Diploma in Medical Laboratory Technology",
+    "slug": "dmlt",
+    "price": 25000,
+    "duration": "24 Months",
+    "image": "/courses/dmlt.jfif",
+    "description": "Learn medical laboratory testing techniques, handling diagnostic equipment, and assisting doctors in disease diagnosis.",
+    "modules": ["Clinical Biochemistry", "Microbiology", "Hematology", "Pathology Lab Techniques"],
+    "careerOpportunities": ["Medical Lab Technician", "Lab Assistant", "Hospital Laboratory Staff"]
+  },
+  {
+    "id": 2,
+    "title": "OT Technician",
+    "slug": "ot-technician",
+    "price": 22000,
+    "duration": "18 Months",
+    "image": "/courses/ot.jfif",
+    "description": "Training to assist surgeons and medical staff in operation theaters and manage surgical instruments and equipment.",
+    "modules": ["Operation Theatre Management", "Surgical Instruments", "Patient Care", "Sterilization Techniques"],
+    "careerOpportunities": ["OT Technician", "Surgical Assistant", "Hospital Operation Theatre Staff"]
+  },
+  {
+    "id": 3,
+    "title": "X-Ray Technician",
+    "slug": "xray-technician",
+    "price": 24000,
+    "duration": "18 Months",
+    "image": "/courses/x-ray.jfif",
+    "description": "Learn to operate X-ray machines and assist doctors in diagnosing injuries and diseases using radiology imaging.",
+    "modules": ["Radiology Basics", "X-Ray Equipment Handling", "Patient Positioning", "Radiation Safety"],
+    "careerOpportunities": ["Radiology Technician", "X-Ray Operator", "Diagnostic Center Technician"]
+  },
+  {
+    "id": 4,
+    "title": "Dialysis Technician",
+    "slug": "dialysis-technician",
+    "price": 26000,
+    "duration": "24 Months",
+    "image": "/courses/dialysis.jfif",
+    "description": "Training to operate dialysis machines and assist patients with kidney-related treatments.",
+    "modules": ["Kidney Physiology", "Dialysis Equipment", "Patient Monitoring", "Emergency Procedures"],
+    "careerOpportunities": ["Dialysis Technician", "Hospital Dialysis Unit Staff", "Kidney Care Assistant"]
+  },
+  {
+    "id": 5,
+    "title": "ECG Technician",
+    "slug": "ecg-technician",
+    "price": 21000,
+    "duration": "12 Months",
+    "image": "/courses/ecg.jfif",
+    "description": "Learn to perform electrocardiogram tests and assist doctors in diagnosing heart conditions.",
+    "modules": ["Cardiac Anatomy", "ECG Machine Handling", "Heart Monitoring", "Patient Preparation"],
+    "careerOpportunities": ["ECG Technician", "Cardiology Assistant", "Hospital Diagnostic Staff"]
+  }
+]

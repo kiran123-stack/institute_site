@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "DCA - Diploma in Computer Applications",
+    "slug": "dca",
+    "price": 8000,
+    "duration": "6 Months",
+    "image": "/courses/dca.jpg",
+    "description": "Learn basic computer operations, MS Office, and internet skills.",
+    "modules": ["MS Word", "MS Excel", "Operating Systems", "Internet Basics"],
+    "careerOpportunities": ["Data Entry Operator", "Office Assistant", "Computer Teacher"]
+  },
+  {
+    "id": 2,
+    "title": "ADCA - Advanced Diploma in Computer Applications",
+    "slug": "adca",
+    "price": 15000,
+    "duration": "12 Months",
+    "image": "/courses/adca.webp",
+    "description": "Advanced computer training including office tools, programming basics, and accounting software.",
+    "modules": ["Advanced Excel", "Tally ERP", "Basic Programming", "Database Management"],
+    "careerOpportunities": ["Computer Operator", "Accounts Executive", "Office Manager"]
+  },
+  {
+    "id": 3,
+    "title": "Tally with GST",
+    "slug": "tally-gst",
+    "price": 10000,
+    "duration": "3 Months",
+    "image": "/courses/tally.webp",
+    "description": "Master accounting with Tally including GST filing and financial reporting.",
+    "modules": ["Tally ERP", "GST Filing", "Inventory Management", "Financial Reports"],
+    "careerOpportunities": ["Accountant", "GST Consultant", "Billing Executive"]
+  },
+  {
+    "id": 4,
+    "title": "Graphic Designing",
+    "slug": "graphic-designing",
+    "price": 12000,
+    "duration": "6 Months",
+    "image": "/courses/graphic-design.jfif",
+    "description": "Learn professional graphic design tools and create visual content for brands and businesses.",
+    "modules": ["Photoshop", "Illustrator", "CorelDRAW", "Design Principles"],
+    "careerOpportunities": ["Graphic Designer", "Creative Designer", "Freelance Designer"]
+  },
+  {
+    "id": 5,
+    "title": "Web Development",
+    "slug": "web-development",
+    "price": 20000,
+    "duration": "8 Months",
+    "image": "/courses/web-development.jfif",
+    "description": "Learn to build modern websites using HTML, CSS, JavaScript and frameworks.",
+    "modules": ["HTML", "CSS", "JavaScript", "React Basics"],
+    "careerOpportunities": ["Web Developer", "Frontend Developer", "Freelancer"]
+  },
+  {
+    "id": 6,
+    "title": "Digital Marketing",
+    "slug": "digital-marketing",
+    "price": 18000,
+    "duration": "6 Months",
+    "image": "/courses/digital-marketing.jfif",
+    "description": "Learn marketing strategies for online platforms including SEO and social media marketing.",
+    "modules": ["SEO", "Social Media Marketing", "Google Ads", "Content Marketing"],
+    "careerOpportunities": ["Digital Marketer", "SEO Specialist", "Social Media Manager"]
+  },
+  {
+    "id": 7,
+    "title": "Python Programming",
+    "slug": "python-programming",
+    "price": 17000,
+    "duration": "5 Months",
+    "image": "/courses/python.jpg",
+    "description": "Learn Python programming for automation, data analysis, and software development.",
+    "modules": ["Python Basics", "Data Structures", "File Handling", "API Integration"],
+    "careerOpportunities": ["Python Developer", "Automation Engineer", "Software Developer"]
+  }
+]
