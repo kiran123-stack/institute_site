@@ -93,19 +93,19 @@ const certifications = [
     label: "ISO Certified",
     desc: "International quality standards maintained across all programs.",
     emoji: "🏅",
-    logo:  "/iso.png" ,  // 📌 Replace with "/certs/iso.png"
+    logo:  "/iso.png" ,  
   },
   {
     label: "Govt. Recognised",
     desc: "Officially recognised by State & Central Government bodies.",
     emoji: "🏛️",
-    logo: "/gov.jfif " ,  // 📌 Replace with "/certs/govt.png"
+    logo: "/gov.jfif " ,  
   },
   {
     label: "Skill India Partner",
     desc: "Empowering youth under the national Skill India mission.",
     emoji: "🇮🇳",
-    logo: "/skill.png" ,  // 📌 Replace with "/certs/skill-india.png"
+    logo: "/skill.png" ,  
   },
 ];
 
