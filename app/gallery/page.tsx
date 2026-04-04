@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Metadata } from "next";
+import GalleryGrid from "../components/gallery/GalleryGrid";
 
 export const metadata: Metadata = {
   title: "Institute Gallery | Classrooms, Labs & Events",
@@ -19,39 +20,64 @@ export default function GalleryPage() {
   return (
     <div className="bg-white min-h-screen pb-20">
       {/* Page Header */}
-      <section className="bg-[#1E3A8A] text-white py-16 text-center">
-        <h1 className="text-4xl font-bold font-poppins mb-4">Life at Our Institute</h1>
-        <p className="text-lg font-inter text-blue-100 max-w-2xl mx-auto px-4">
-          Experience our vibrant learning environment, high-tech labs, and student success events.
-        </p>
-      </section>
-
-      {/* Gallery Grid */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {images.map((img, idx) => (
-            <div key={idx} className="group relative overflow-hidden rounded-lg shadow-md aspect-video bg-gray-200">
-              {/* Replace the div below with an actual Image tag once you add photos to public/images */}
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500 font-inter bg-gray-100 group-hover:scale-105 transition-transform duration-300">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+       <section className="relative overflow-hidden bg-gradient-to-br from-[#0A1628] via-[#1E3A8A] to-[#0A1628] py-24 px-6 text-center">
+ 
+        {/* BG shapes */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <svg className="absolute -top-20 -right-20 w-80 h-80 opacity-[0.06]" viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="180" stroke="#fff" strokeWidth="40" fill="none"/>
+          </svg>
+          <svg className="absolute -bottom-16 -left-16 w-64 h-64 opacity-[0.06]" viewBox="0 0 300 300">
+            <rect x="30" y="30" width="240" height="240" rx="20" stroke="#C9A84C" strokeWidth="40" fill="none"/>
+          </svg>
+          <div style={{
+            position:"absolute", top:"50%", left:"50%",
+            transform:"translate(-50%,-50%)",
+            width:600, height:600, borderRadius:"50%",
+            background:"radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%)",
+            pointerEvents:"none",
+          }}/>
+        </div>
+ 
+        <div className="relative max-w-3xl mx-auto">
+          <span className="inline-block text-[10px] font-black uppercase tracking-[0.35em] text-[#C9A84C] mb-4">
+             Campus Life
+          </span>
+          <h1
+            className="text-4xl sm:text-5xl font-black text-white leading-[1.1] mb-5"
+            style={{ fontFamily: "'Georgia', serif" }}
+          >
+            Life at Our <br/>
+            <span style={{
+              background:"linear-gradient(120deg,#C9A84C,#f59e0b,#C9A84C)",
+              backgroundSize:"200% auto",
+              WebkitBackgroundClip:"text",
+              WebkitTextFillColor:"transparent",
+              backgroundClip:"text",
+            }}>Institute</span>
+          </h1>
+          <p className="text-blue-200 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
+            Experience our vibrant learning environment, high-tech labs, and student success events.
+          </p>
+ 
+          {/* Stats row */}
+          <div className="flex flex-wrap justify-center gap-8 mt-8">
+            {[
+              { val: "2",     label: "Modern Labs" },
+              { val: "5,000+",label: "Alumni" },
+              { val: "50+",   label: "Annual Events" },
+            ].map((s) => (
+              <div key={s.label} className="text-center">
+                <div className="text-xl font-black text-white" style={{ fontFamily:"'Georgia',serif" }}>{s.val}</div>
+                <div className="text-[10px] uppercase tracking-[0.15em] text-blue-300 font-bold mt-0.5">{s.label}</div>
               </div>
-
-              {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <div>
-                  <span className="text-xs font-bold text-[#F59E0B] uppercase tracking-wider">{img.category}</span>
-                  <p className="text-white font-medium">{img.alt}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
+ 
+
+     <GalleryGrid/>
     </div>
   );
 }

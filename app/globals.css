@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes scroll-single {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-single {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-single 12s linear infinite;
+}
+
+.animate-scroll-single:hover {
+  animation-play-state: paused;
+}

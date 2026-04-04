@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const QuickEnquiry = () => {
   return (
-    <section className="bg-[#3B82F6] text-white py-16 px-6 sm:px-12 lg:px-24">
+    <section className="bg-gradient-to-r from-[#0A1628] via-[#1E3A8A] to-[#0A1628] text-white py-16 px-6 sm:px-12 lg:px-24">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         
         {/* Text Section */}

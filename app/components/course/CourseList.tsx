@@ -8,7 +8,7 @@ interface CourseListProps {
 
 const CourseList = ({ courses, category }: CourseListProps) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className=" rounded-2xl shadow-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {courses.map((course) => (
         <CourseCard 
           key={course.id}
@@ -18,6 +18,7 @@ const CourseList = ({ courses, category }: CourseListProps) => {
           price={course.price}
           image={course.image}
           category={category}
+          description={course.description}
         />
       ))}
     </div>

@@ -8,12 +8,13 @@ interface CourseProps {
   duration: string;
   price: number;
   image: string;
+  description: string;
   category: 'computer' | 'paramedical';
 }
 
-const CourseCard = ({ title, slug, duration, price, image, category }: CourseProps) => {
-  // FIXED: Both link to /courses/[slug] so the dynamic page can handle the details
-  const detailPath = `/courses/${slug}`;
+const CourseCard = ({ title, slug, duration, price, image, category,description }: CourseProps) => {
+  
+ // const detailPath = `/courses/${slug}`;   for detail page
 
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col">
@@ -45,18 +46,21 @@ const CourseCard = ({ title, slug, duration, price, image, category }: CoursePro
           <div className="flex items-center text-sm font-bold text-[#1E3A8A]">
             <span className="mr-2">💰</span> ₹{price.toLocaleString()}
           </div>
+           <div className="mr-2 mt-1 flex items-center line-through text-sm font-bold text-[#1E3A8A]">
+             {description}
+          </div>
         </div>
 
         <div className="mt-auto space-y-3">
-          <Link 
+         { /*<Link 
             href={`/courses/${slug}`}
             className="block w-full text-center bg-[#F59E0B] hover:bg-orange-600 text-white font-bold py-2 rounded transition-colors"
           >
             View Details
-          </Link>
+          </Link>*/}
           <Link 
             href={`/enquiry?course=${slug}`}
-            className="block w-full text-center border border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white font-semibold py-2 rounded transition-colors text-sm"
+            className="block w-full text-center font-semibold bg-white rounded-sm border border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white font-semibold py-2 rounded transition-colors text-sm"
           >
             Quick Enquiry
           </Link>

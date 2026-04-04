@@ -7,6 +7,10 @@ import PlacementPreview from "./components/home/PlacementPreview";
 import QuickEnquiry from "./components/home/QuickEnquiry";
 import GoogleMap from "./components/contact/GoogleMap";
 import EnquiryPopup from "./components/common/EnquiryPopup";
+import GalleryGrid from "./components/gallery/GalleryGrid";
+import ParamedicalPage from "./paramedical/page";
+import CoursesPage from "./courses/page";
+import ContactPage from "./contact/page";
 
 export const metadata: Metadata = {
   title: "Home | Professional Computer & Paramedical Institute",
@@ -17,15 +21,16 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <Hero />
-      <CourseHighlights />
+    <div className="flex justify-center align-top items-start text-black font-extrabold mb-10 p-4">
+  <h1>Computer courses</h1>
+  <CourseHighlights/>
+</div>
+      
+      
       <WhyChooseUs />
       <Testimonials />
-      <PlacementPreview />
-      <QuickEnquiry />
-      <div className="py-16 px-6 sm:px-12 lg:px-24 bg-gray-50">
-        <h2 className="text-3xl font-bold text-center text-[#1E3A8A] mb-8 font-poppins">Our Location</h2>
-        <GoogleMap/>
-        </div>
+      <GalleryGrid/>
+      <ContactPage/>
         <EnquiryPopup/>
     </div>
   );
