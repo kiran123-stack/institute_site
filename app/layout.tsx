@@ -40,21 +40,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
-    
-      <body
-        className={`${roboto.className} flex flex-col min-h-screen bg-white text-gray-800 antialiased`}
-      >
+      <body className={`${roboto.className} flex flex-col min-h-screen bg-white text-gray-800 antialiased overflow-x-hidden w-full`}>
         <Navbar />
-
-        <main className="flex-grow">{children}</main>
-
+        {/* Added overflow-x-hidden here to catch child component bleeds */}
+        <main className="flex-grow w-full overflow-x-hidden">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

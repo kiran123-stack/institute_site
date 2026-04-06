@@ -247,10 +247,11 @@ function CourseSection({
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
-            480:  { slidesPerView: 1.3 },
-            640:  { slidesPerView: 2   },
-            900:  { slidesPerView: 3   },
-            1200: { slidesPerView: 4   },
+            320:  { slidesPerView: 1 },
+            480:  { slidesPerView: 1.2 },
+            640:  { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
           }}
           navigation={{ nextEl: `.${accentClass}-next`, prevEl: `.${accentClass}-prev` }}
           pagination={{ clickable: true, el: `.${accentClass}-pagination` }}

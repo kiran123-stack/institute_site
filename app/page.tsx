@@ -19,19 +19,20 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full overflow-x-hidden">
       <Hero />
-    <div className="flex justify-center align-top items-start text-black font-extrabold mb-10 p-4">
-  <h1>Computer courses</h1>
-  <CourseHighlights/>
-</div>
       
+     
+      <div className="w-full text-black font-extrabold mb-10 p-4">
+        <h1 className="text-center text-3xl mb-6">Computer Courses</h1>
+        <CourseHighlights />
+      </div>
       
       <WhyChooseUs />
       <Testimonials />
-      <GalleryGrid/>
-      <ContactPage/>
-        <EnquiryPopup/>
+      <GalleryGrid />
+      <ContactPage />
+      <EnquiryPopup />
     </div>
   );
 }
