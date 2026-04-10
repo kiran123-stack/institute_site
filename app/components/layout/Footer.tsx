@@ -80,7 +80,7 @@ export default function Footer() {
                 { label: "About Us", href: "/about" },
                 { label: "Computer Courses", href: "/courses" },
                 { label: "Paramedical Courses", href: "/paramedical" },
-                { label: "Placements", href: "/placements" },
+      
                 { label: "Gallery", href: "/gallery" },
                 { label: "Contact Us", href: "/contact" },
               ].map(({ label, href }) => (
