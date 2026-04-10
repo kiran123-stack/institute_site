@@ -29,6 +29,7 @@ A modern, fast, and SEO-optimized website built for an educational institute off
 ---
 
 ## 📂 Project Structure
+```
 app/
 ├── about/                  # About Us page — institute history and team
 ├── components/             # Reusable React components
@@ -40,7 +41,7 @@ app/
 │   ├── layout/             # Navbar and Footer components
 │   └── placement/          # Placement grid for successful alumni
 ├── contact/                # Contact details and form page
-├── courses/                # IT/Computer courses listing and dynamic details routing ([slug])
+├── courses/                # IT/Computer courses listing and dynamic details ([slug])
 ├── data/                   # 🗄️ JSON files acting as a database
 │   ├── computerCourses.json
 │   └── paramedicalCourses.json
@@ -52,6 +53,7 @@ app/
 ├── globals.css             # Global Tailwind CSS and custom animations
 ├── layout.tsx              # Root layout — Navbar, Footer, and Metadata
 └── page.tsx                # Main landing page
+```
 ---
 
 ## 📝 Content Management
